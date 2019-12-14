@@ -17,6 +17,8 @@ public class ConsoleExercises {
         System.out.println("Enter a number:");
         int userInput =  input.nextInt();
 
+//        use new line and new int
+
     }
 
 }
