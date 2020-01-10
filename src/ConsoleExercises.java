@@ -34,3 +34,4 @@ public class ConsoleExercises {
 //
 //        do you capture all of the words?
 //        Rewrite the above example using the nextLine method.
+
