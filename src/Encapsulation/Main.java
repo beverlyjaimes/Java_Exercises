@@ -6,8 +6,8 @@ public class Main {
         Student s = new Student();
         s.setName("Joe");
         s.setAge(5);
-
-        System.out.println("s.name = " + s.name);
-        System.out.println("s.age = " + s.age);
+//age and name wont show up so we need to create get method
+        System.out.println("s.name = " + s.getName());
+        System.out.println("s.age = " + s.getAge());
     }
 }
