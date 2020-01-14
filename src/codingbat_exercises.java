@@ -3,6 +3,7 @@ public class codingbat_exercises {
         System.out.println(sleepIn(false, false));
         System.out.println(diff21(5));
         System.out.println(nearHundred(60));
+        System.out.println(missingChar("kitten", 2));
     }
 
 
@@ -52,4 +53,20 @@ public class codingbat_exercises {
     public static boolean nearHundred(int n) {
         return ((Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10));
     }
-}
+
+
+//
+//    Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).
+//
+//
+//        missingChar("kitten", 1) → "ktten"
+//        missingChar("kitten", 0) → "itten"
+//        missingChar("kitten", 4) → "kittn"
+
+    public static String missingChar(String str, int n) {
+        String front = str.substring(0, n);
+
+        String back = str.substring(n + 1, str.length());
+
+        return front + back;
+    }}
